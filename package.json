@@ -6,7 +6,7 @@
   "main": "src/index.js",
   "exports": "./src/index.js",
   "bin": { "usd-brep-review": "scripts/cli.mjs" },
-  "files": ["src/*.js", "scripts/*.mjs", "scripts/*.py", "examples/*.json", "docs/*.md", "README.md", "NOTICE", "LICENSE", "requirements-native.txt"],
+  "files": ["src/*.js", "scripts/*.mjs", "scripts/*.py", "examples/*.json", "docs/*.md", "docs/assets/*.svg", "README.md", "README.zh-CN.md", "CONTRIBUTING.md", "NOTICE", "LICENSE", "requirements-native.txt"],
   "scripts": { "test": "node scripts/test.mjs", "test:native": "node scripts/native-smoke.mjs", "check": "node scripts/check.mjs" },
   "engines": { "node": ">=20" },
   "license": "MIT",

@@ -1,5 +1,7 @@
 # 接口与架构
 
+[项目概述](../README.zh-CN.md) · [API 参考](api.md) · [验证范围](validation.md)
+
 `src/review-policy.js` 定义数值策略和几何/视觉/交付的独立判定。`src/unified-review-channel.js` 核对文件与计划摘要，最多缓存 128 项。`src/combined-review.js` 按一个模型版本组合几何与视觉。`src/session.js` 验证标准几何证据并提供 `session.review()`。`src/native-adapter.js` 通过隔离的 Python 进程调用 NVIDIA。
 
 `adapter.build()` 从特征树创建精确实体；`adapter.inspect()` 直接导入已有精确 USDA，不要求 AICAD 的 manifest、服务或修订存储。Python I/O 在 ASCII 临时路径执行，兼容 Windows 中文工作路径，完成后复制产物回调用者目录。

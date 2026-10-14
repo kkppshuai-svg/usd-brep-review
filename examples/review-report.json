@@ -1,0 +1,223 @@
+{
+  "format": "usd-brep-review-report-v1",
+  "valid": true,
+  "blockingErrorCount": 0,
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "info": 0
+  },
+  "issues": [],
+  "measurements": [],
+  "facts": {
+    "solidCount": 1,
+    "volume": 6898.40710546356,
+    "bbox": [
+      40.00004,
+      30.00004,
+      6.00004
+    ],
+    "boundsMin": [
+      -20.00002,
+      -15.00002,
+      -3.00002
+    ],
+    "boundsMax": [
+      20.00002,
+      15.00002,
+      3.00002
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ]
+  },
+  "roundTrip": {
+    "valid": true,
+    "issues": [],
+    "comparisons": [
+      {
+        "metric": "volume",
+        "axis": 0,
+        "expected": 6898.40710546356,
+        "measured": 6898.40710546356,
+        "absoluteError": 0,
+        "tolerance": 0.000689850710546356,
+        "status": "pass"
+      },
+      {
+        "metric": "bbox",
+        "axis": 0,
+        "expected": 40.00004,
+        "measured": 40.00004,
+        "absoluteError": 0,
+        "tolerance": 1.04000004e-06,
+        "status": "pass"
+      },
+      {
+        "metric": "bbox",
+        "axis": 1,
+        "expected": 30.00004,
+        "measured": 30.00004,
+        "absoluteError": 0,
+        "tolerance": 1.04000004e-06,
+        "status": "pass"
+      },
+      {
+        "metric": "bbox",
+        "axis": 2,
+        "expected": 6.00004,
+        "measured": 6.00004,
+        "absoluteError": 0,
+        "tolerance": 1.04000004e-06,
+        "status": "pass"
+      },
+      {
+        "metric": "boundsMin",
+        "axis": 0,
+        "expected": -20.00002,
+        "measured": -20.00002,
+        "absoluteError": 0,
+        "tolerance": 1.04000004e-06,
+        "status": "pass"
+      },
+      {
+        "metric": "boundsMin",
+        "axis": 1,
+        "expected": -15.00002,
+        "measured": -15.00002,
+        "absoluteError": 0,
+        "tolerance": 1.04000004e-06,
+        "status": "pass"
+      },
+      {
+        "metric": "boundsMin",
+        "axis": 2,
+        "expected": -3.00002,
+        "measured": -3.00002,
+        "absoluteError": 0,
+        "tolerance": 1.04000004e-06,
+        "status": "pass"
+      },
+      {
+        "metric": "boundsMax",
+        "axis": 0,
+        "expected": 20.00002,
+        "measured": 20.00002,
+        "absoluteError": 0,
+        "tolerance": 1.04000004e-06,
+        "status": "pass"
+      },
+      {
+        "metric": "boundsMax",
+        "axis": 1,
+        "expected": 15.00002,
+        "measured": 15.00002,
+        "absoluteError": 0,
+        "tolerance": 1.04000004e-06,
+        "status": "pass"
+      },
+      {
+        "metric": "boundsMax",
+        "axis": 2,
+        "expected": 3.00002,
+        "measured": 3.00002,
+        "absoluteError": 0,
+        "tolerance": 1.04000004e-06,
+        "status": "pass"
+      },
+      {
+        "metric": "center",
+        "axis": 0,
+        "expected": 0,
+        "measured": 0,
+        "absoluteError": 0,
+        "tolerance": 1.04000004e-06,
+        "status": "pass"
+      },
+      {
+        "metric": "center",
+        "axis": 1,
+        "expected": 0,
+        "measured": 0,
+        "absoluteError": 0,
+        "tolerance": 1.04000004e-06,
+        "status": "pass"
+      },
+      {
+        "metric": "center",
+        "axis": 2,
+        "expected": 0,
+        "measured": 0,
+        "absoluteError": 0,
+        "tolerance": 1.04000004e-06,
+        "status": "pass"
+      }
+    ],
+    "policy": {
+      "version": "unified-brep-review-v2",
+      "linearAbsoluteMm": 1e-06,
+      "linearRelative": 1e-09,
+      "volumeAbsoluteMm3": 1e-08,
+      "volumeRelative": 1e-07
+    },
+    "coverage": "volume, body count, bounds and center; not a surface Hausdorff-distance proof"
+  },
+  "expected": {
+    "volumeMm3": 6898.40710525538
+  },
+  "reviewStages": [
+    {
+      "stage": "native_geometry",
+      "status": "pass"
+    },
+    {
+      "stage": "usd_roundtrip",
+      "status": "pass"
+    }
+  ],
+  "review": {
+    "protocol": "unified-brep-review-v2",
+    "engine": "nvidia-usd-brep",
+    "policy": {
+      "version": "unified-brep-review-v2",
+      "linearAbsoluteMm": 1e-06,
+      "linearRelative": 1e-09,
+      "volumeAbsoluteMm3": 1e-08,
+      "volumeRelative": 1e-07,
+      "occtIntegrationRelative": 1e-09,
+      "smlibIntegrationRelative": 1e-08
+    },
+    "rollout": {
+      "phase": "parallel-validation",
+      "primaryEngine": "nvidia-usd-brep",
+      "parallelEngine": "cadquery",
+      "userAcceptance": "pending"
+    },
+    "coverage": {
+      "topology": "SMLib manifold topology",
+      "serialization": "volume, solid count, center and absolute bounds",
+      "dimensions": "required finite BRep measurements; unsupported checks block",
+      "surfaceDistance": "not a surface Hausdorff-distance proof",
+      "manufacturing": "heuristic engineering checks"
+    },
+    "geometryDecision": "pass",
+    "visualDecision": "pending",
+    "deliveryDecision": "pending",
+    "constraintMethod": "AICAD rule-based rigid-body analysis; not a general numerical constraint solver"
+  },
+  "status": "pending",
+  "profile": "delivery",
+  "documentation": {
+    "kind": "measured-report-excerpt",
+    "source": "Local NVIDIA USD BRep 1.0.0 native CLI build and inspect run",
+    "input": "examples/plate.json",
+    "omittedFields": [
+      "review.cache",
+      "reviewRevisionId",
+      "visualEvidence"
+    ],
+    "note": "Geometry passed. A visual provider was not invoked; visual and delivery decisions remain pending."
+  }
+}
