@@ -1,0 +1,7 @@
+USD BRep Review is an independent community integration maintained by kkppshuai-svg.
+Review code originates from kkppshuai-svg/ai-cad, commit efaf4ab5c3ccdfa12c0762c3c79664354ce6b55e.
+
+Native modeling depends on NVIDIA-Omniverse/usd-brep (https://github.com/NVIDIA-Omniverse/usd-brep).
+That dependency is licensed separately under Apache-2.0 and its upstream third-party notices.
+No NVIDIA source code or native binaries are vendored in this repository.
+NVIDIA and SMLib names identify the dependency and do not imply endorsement or affiliation.

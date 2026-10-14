@@ -1,0 +1,8 @@
+{
+  "id": "plate",
+  "requireSingleSolid": true,
+  "featureTree": [
+    {"id":"base","type":"base_box","params":{"size":[40,30,6],"center":true}},
+    {"id":"hole","type":"hole","dependsOn":["base"],"params":{"diameter":8,"depth":20,"axis":"z","center":[0,0,0]}}
+  ]
+}

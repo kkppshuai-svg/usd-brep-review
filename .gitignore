@@ -1,0 +1,10 @@
+.env*
+!.env.example
+node_modules/
+.venv*/
+output/
+__pycache__/
+*.pyc
+*.tgz
+*.log
+.publish-*

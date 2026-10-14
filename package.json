@@ -1,0 +1,15 @@
+{
+  "name": "@kkppshuai-svg/usd-brep-review",
+  "version": "0.1.0",
+  "description": "Standalone BRep and visual review channel with a native NVIDIA USD BRep adapter",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "bin": { "usd-brep-review": "scripts/cli.mjs" },
+  "files": ["src/*.js", "scripts/*.mjs", "scripts/*.py", "examples/*.json", "docs/*.md", "README.md", "NOTICE", "LICENSE", "requirements-native.txt"],
+  "scripts": { "test": "node scripts/test.mjs", "test:native": "node scripts/native-smoke.mjs", "check": "node scripts/check.mjs" },
+  "engines": { "node": ">=20" },
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/kkppshuai-svg/usd-brep-review.git" },
+  "keywords": ["usd-brep", "nvidia", "brep", "cad", "geometry", "visual-review"]
+}
