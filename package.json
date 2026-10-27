@@ -1,7 +1,7 @@
 {
   "name": "@kkppshuai-svg/usd-brep-review",
-  "version": "0.1.0",
-  "description": "Standalone BRep and visual review channel with a native NVIDIA USD BRep adapter",
+  "version": "0.2.0",
+  "description": "Pluggable CAD review with version-bound BRep, visual, motion and requirement evidence",
   "type": "module",
   "main": "src/index.js",
   "exports": "./src/index.js",

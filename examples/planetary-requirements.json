@@ -1,0 +1,8 @@
+[
+  {"id":"sun-tooth-width","kind":"dimension","partId":"sun","target":10,"tolerance":0.0001,"unit":"mm"},
+  {"id":"sun-bore-diameter","kind":"dimension","partId":"sun","target":12.2,"tolerance":0.0001,"unit":"mm"},
+  {"id":"gear-carrier-axial-clearance","kind":"dimension","partId":"sun","target":1.5,"tolerance":0.0001,"unit":"mm"},
+  {"id":"gear-motion","kind":"motion","startDeg":0,"endDeg":18.75,"maxStepDeg":0.0625,"minimumClearanceMm":0},
+  {"id":"gear-ratio","kind":"kinematic_ratio","target":5,"tolerance":0,"unit":"1"},
+  {"id":"visual-review","kind":"visual"}
+]

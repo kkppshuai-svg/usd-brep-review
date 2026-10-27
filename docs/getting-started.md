@@ -12,6 +12,8 @@
 
 The JavaScript core has no third-party runtime dependencies. Consult the [NVIDIA upstream repository](https://github.com/NVIDIA-Omniverse/usd-brep#requirements) for platform runtime and source-build requirements.
 
+Upstream 1.0.1 is available but is not yet the default: see the [1.0.1 test results and Windows installation-path limitation](plugin.md#上游版本与精度).
+
 ## Installation
 
 ```bash

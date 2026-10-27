@@ -5,6 +5,8 @@
 
 A standalone review pipeline for CAD geometry and visual evidence, with a native adapter for [NVIDIA USD BRep](https://github.com/NVIDIA-Omniverse/usd-brep).
 
+The review plugin also checks explicit dimensional requirements and sampled motion evidence, with version-bound repair and preservation checks. See [plugin usage and research basis](docs/plugin.md).
+
 [简体中文](README.zh-CN.md) · [Getting started](docs/getting-started.md) · [API reference](docs/api.md) · [Validation scope](docs/validation.md) · [Contributing](CONTRIBUTING.md)
 
 ## Overview

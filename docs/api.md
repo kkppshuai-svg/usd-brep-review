@@ -88,6 +88,8 @@ This interface does not execute OpenCascade. A caller using `engine: 'cadquery'`
 
 ## CLI options and exit codes
 
+The separate `verify-aicad` command and its pass/fail/pending exit codes are documented in [plugin usage](plugin.md); the table below applies to the original `build` and `review` commands.
+
 ```text
 usd-brep-review build PART.json --output DIR
 usd-brep-review review MODEL.usda --output DIR

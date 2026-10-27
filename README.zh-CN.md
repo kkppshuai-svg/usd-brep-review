@@ -3,15 +3,17 @@
 [![CI](https://github.com/kkppshuai-svg/usd-brep-review/actions/workflows/check.yml/badge.svg)](https://github.com/kkppshuai-svg/usd-brep-review/actions/workflows/check.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-独立的 CAD 几何与视觉证据审查通道，提供 [NVIDIA USD BRep](https://github.com/NVIDIA-Omniverse/usd-brep) 原生适配器。
+独立的 CAD 审查插件，结合 [NVIDIA USD BRep](https://github.com/NVIDIA-Omniverse/usd-brep) 几何、视觉、尺寸和运动采样证据。
 
-[English](README.md) · [安装与运行](docs/getting-started.md) · [接口参考](docs/api.md) · [验证范围](docs/validation.md) · [贡献规范](CONTRIBUTING.md)
+[English](README.md) · [插件与研究依据](docs/plugin.md) · [安装与运行](docs/getting-started.md) · [接口参考](docs/api.md) · [验证范围](docs/validation.md)
 
 ## 项目概述
 
 USD BRep Review 将内核几何检查、产物完整性检查和绑定模型版本的视觉审查汇总到同一份报告，面向 CAD 自动化、AI 辅助建模工具和 USD 工作流开发者。
 
 原生适配器支持从特征计划建模，或直接审查已有精确 USDA 文件。应用通过回调接入自己的视觉模型或人工审查服务。报告分别给出几何、视觉和完整交付结论。
+
+插件还可按明确目标和公差逐项核对外部内核测量，检查运动采样覆盖，并在受限修改后核对未授权零件。详情和 AICAD 接入方式见[插件说明](docs/plugin.md)。
 
 ![原生带孔板模型及其审查结论](docs/assets/native-review.svg)
 

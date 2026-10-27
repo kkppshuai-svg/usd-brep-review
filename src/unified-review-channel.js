@@ -21,7 +21,7 @@ export class UnifiedReviewChannel {
 
   async bind(job) {
     const root = await realpath(job.outputDir);
-    const files = [...new Set([job.stepPath, job.usdBrepPath, job.stlPath, job.glbPath,
+    const files = [...new Set([job.stepPath, job.usdBrepPath, job.stlPath, job.glbPath, job.motionReviewPath,
       ...(job.parts || []).flatMap(part => [part.localStepPath, part.localUsdBrepPath])].filter(Boolean))];
     job.reviewPlanChecksum = digest(job.plan);
     job.reviewBindings = await Promise.all(files.map(async file => {
